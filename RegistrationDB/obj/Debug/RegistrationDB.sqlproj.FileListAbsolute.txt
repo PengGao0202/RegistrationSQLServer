@@ -1,0 +1,6 @@
+C:\Users\LENOVO\source\repos\RegistrationSQLServer\RegistrationDB\bin\Debug\RegistrationDB.dacpac
+C:\Users\LENOVO\source\repos\RegistrationSQLServer\RegistrationDB\bin\Debug\RegistrationDB.dll
+C:\Users\LENOVO\source\repos\RegistrationSQLServer\RegistrationDB\bin\Debug\RegistrationDB.pdb
+C:\Users\LENOVO\source\repos\RegistrationSQLServer\RegistrationDB\obj\Debug\RegistrationDB.sqlprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\RegistrationSQLServer\RegistrationDB\obj\Debug\RegistrationDB.dll
+C:\Users\LENOVO\source\repos\RegistrationSQLServer\RegistrationDB\obj\Debug\RegistrationDB.pdb
