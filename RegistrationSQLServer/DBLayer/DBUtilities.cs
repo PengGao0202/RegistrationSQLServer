@@ -14,15 +14,18 @@ namespace RegistrationSQLServer.DBLayer
             string connectionString = ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ToString();
 
             return new SqlConnection(connectionString);
+
         }
 
         public static int InsertUserInformation(BusinessLayer.UserInformation ui)
         {
+            
             int result;
 
             using (SqlConnection cnn = GetSqlConnection())
             {
-                String sql = $"Inser into UserInformation(FirstName, LastName, Address, City, Province, PostalCode, Country) values ('{ui.FirstName}','{ui.LastName}','{ui.Address}','{ui.City}','{ui.Province}','{ui.PostalCode}','{ui.Country}')";
+                String sql = $"Insert into UserInformation(FirstName, LastName, Address, City, Province, PostalCode, Country) values ('{ui.FirstName}','{ui.LastName}','{ui.Address}','{ui.City}','{ui.Province}','{ui.PostalCode}','{ui.Country}')";
+                
                 using(SqlCommand command = new SqlCommand(sql, cnn))
                 {
                     using(SqlDataAdapter adapter = new SqlDataAdapter())
