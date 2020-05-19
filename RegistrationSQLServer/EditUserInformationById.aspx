@@ -1,15 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="RegistrationSQLServer.Registration" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditUserInformationById.aspx.cs" Inherits="RegistrationSQLServer.EditUserInformationById" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Registration Page</title>
+    <title>Edit Page</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>Enter User Information:</h1>
+            <h1>Update User Information:</h1>
             <br />
             <asp:Panel ID="enterUserInfoPanel" runat="server">
                 <table cellpadding="3" border="0">
@@ -26,6 +26,7 @@
                         <td>
                             <asp:TextBox ID="lastNameTextBox" runat="server" />
                             <asp:RequiredFieldValidator ID="lastNameTextBoxValidator" ControlToValidate="lastNameTextBox" runat="server" ForeColor="Red" ErrorMessage="Please enter a Last Name"></asp:RequiredFieldValidator>
+                        
                         </td>
                     </tr>
                     <tr>
@@ -59,6 +60,7 @@
                             <asp:TextBox ID="zipCodeTextBox" runat="server" />
                             <asp:RequiredFieldValidator ID="zipCodeTextBoxValidator" ControlToValidate="zipCodeTextBox" runat="server" ForeColor="Red" ErrorMessage="Please enter a zip code"></asp:RequiredFieldValidator>
 
+
                         </td>
                     </tr>
                     <tr>
@@ -66,6 +68,7 @@
                         <td>
                             <asp:TextBox ID="countryTextBox" runat="server" />
                             <asp:RequiredFieldValidator ID="countryTextBoxValidator" ControlToValidate="countryTextBox" runat="server" ForeColor="Red" ErrorMessage="Please enter a country"></asp:RequiredFieldValidator>
+                        
                         </td>
                     </tr>
                     <tr>
@@ -75,12 +78,13 @@
                     <tr>
                         <td>&nbsp;</td>
                         <td>
-                            <asp:Button ID="enterInfoButton" runat="server" Text="Enter user information" OnClick="EnterInfoButton_OnClick" /></td>
+                            <asp:Button ID="updateInfoButton" runat="server" Text="Update user information" OnClick="UpdateInfoButton_OnClick" /></td>
                     </tr>
                 </table>
-                <asp:Label ID="lblResultMessage" runat="server" ForeColor="green" ></asp:Label>
+
+                <asp:Label ID="lblResultMessage" runat="server" ForeColor="green"></asp:Label>
                 <br />
-                <asp:LinkButton ID="LinkButtonToEdit" runat="server" OnClick="EditUserInformationButton_OnClick">EditUserInformation</asp:LinkButton>
+                <asp:LinkButton ID="LinkButtonToInsert" runat="server" OnClick="InsertUserInformationButton_OnClick">InsertNewUser</asp:LinkButton>
             </asp:Panel>
         </div>
     </form>
